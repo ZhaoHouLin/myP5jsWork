@@ -1,6 +1,7 @@
 <template lang='pug'>
   #app
     Navbar
+    Background
 </template>
 
 <style lang="stylus" scoped>
