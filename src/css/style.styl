@@ -1,0 +1,55 @@
+sm = 1rem
+md = 2rem
+lg = 3rem
+xl = 4rem
+
+size(w=100%,h=100vh)
+  width w
+  height h
+
+flexCenter(jus=center , alc=jus , direct=row)
+  flex-direction direct
+  display flex
+  justify-content jus
+  align-content alc
+  align-items center
+
+posCenter()
+  position absolute
+  top 50%
+  left 50%
+  transform translate(-50%,-50%)
+
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+  
+  h1,li
+    font-family '微軟正黑體'
+  li
+    font-size md
+    // size(100%,auto)
+    text-align center
+    list-style none
+  a
+    text-decoration none
+    color #222
+
+@media screen and (min-width 320px)
+  h1,i
+    font-size md
+
+@media screen and (min-width 400px)
+  h1,i
+    font-size md
+
+@media screen and (min-width 768px)
+  h1,i
+    font-size xl
+
+@media screen and (min-width 1024px)
+  h1,i
+    font-size xl
+  i 
+    display none
