@@ -9,6 +9,10 @@ function preload() {
 	fontAR = loadFont('Anton-Regular.ttf');
 }
 
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	// background(255,30);

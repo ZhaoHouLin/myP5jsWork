@@ -1,6 +1,10 @@
 let mountainImg
 let noiseImg
 
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+}
+
 function preload() {
 	mountainImg = loadImage('mountain.jpg')
 	noiseImg = loadImage('noiseTexture.jpg')

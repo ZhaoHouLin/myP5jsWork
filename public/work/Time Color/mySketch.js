@@ -1,6 +1,10 @@
 let s,m,h 
 let angleS,angleM,angleH
 
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(100)

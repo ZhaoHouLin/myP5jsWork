@@ -4,7 +4,9 @@ let sound
 let particles = []
 let soundTs = 0
 
-
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+}
 
 function preload() {
 	riverImg = loadImage('river.jpg')

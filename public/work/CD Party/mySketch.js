@@ -3,6 +3,10 @@ let arcLines
 let graphicWidth
 let graphicheight
 
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(255)

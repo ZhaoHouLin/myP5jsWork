@@ -23,6 +23,10 @@ let currentMusic = 0
 let amp
 let volHistory = []
 
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+}
+
 function preload() {
 	for(let music of musics) {
 		tracks.push(loadSound(music))

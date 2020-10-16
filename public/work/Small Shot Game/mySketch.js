@@ -5,6 +5,10 @@ let bullets = []
 let score = 0
 let colorList = 'f9c80e-f86624-ea3546-662e9b-43bccd'.split('-').map(code=>'#'+code)
 
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(100);

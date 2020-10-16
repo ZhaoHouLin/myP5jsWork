@@ -3,6 +3,10 @@ let neons = []
 let maxAge = 30
 let globalHue = 0
 
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
 	createCanvas(windowWidth, windowHeight)
 	colorMode(HSB,255)	
