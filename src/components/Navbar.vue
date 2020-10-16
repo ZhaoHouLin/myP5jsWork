@@ -15,6 +15,7 @@
 <style lang="stylus" scoped>
 @import '../css/style.styl'
 .header
+  z-index 1
   position fixed
   size(100%,auto)
   flexCenter(space-between,center,column)
@@ -40,7 +41,7 @@
       background-color transparent
       flexCenter()
       align-items center
-      border-bottom 1px solid #000
+      border-bottom 1px solid #fff
       a
         flexCenter()
         size(100%,56px)
@@ -59,6 +60,7 @@
   i 
     display none
   .header
+    z-index 1
     .title
       size(100%,84px)
       position relative

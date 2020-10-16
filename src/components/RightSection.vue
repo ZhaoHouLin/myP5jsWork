@@ -7,7 +7,7 @@
 export default {
   data() {
     return {
-      DigiCodeSrc: 'http://localhost:8080/work/DigiCode/index.html'
+      DigiCodeSrc: 'http://localhost:8080/work/Neon/index.html'
     }
   }
 }
@@ -27,5 +27,6 @@ export default {
     size(80%)
     .DigiCode
       size()
-      border none    
+      border none   
+      
 </style>
