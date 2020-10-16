@@ -19,8 +19,9 @@
   size(100%,auto)
   flexCenter(space-between,center,column)
   .title
+    color #fff
     size(100%,auto)
-    border-bottom 1px solid #000
+    border-bottom 1px solid #fff
     flexCenter(space-between,center)
     padding 16px 32px
     i 
@@ -34,6 +35,7 @@
     overflow hidden
     
     li
+      color #fff
       size(100%,56px)
       background-color transparent
       flexCenter()
@@ -43,9 +45,10 @@
         flexCenter()
         size(100%,56px)
     li:hover
-      background-color #222
+      background-color #fff
+      
       a
-        color #fff
+        color #222
   .nav
     display none
 
@@ -66,13 +69,14 @@
         flexCenter()
         font-size 1rem
         li
+          color #fff
           padding 0px 16px
           size(100%,100%)
           flexCenter()
         li:hover
-          background-color #222
+          background-color #fff
           a
-            color #fff
+            color #222
     .box
       display none
     

@@ -7,13 +7,13 @@ class Lyric {
 		this.size = args.size || 20
 	}
 	
-	draw(selectedColor) {
-		let mode = radioElement.value()
-		if(mode=='2') {
-			fill(selectedColor)
-		} else {
+	draw() {
+		// let mode = radioElement.value()
+		// if(mode=='2') {
+			// fill(selectedColor)
+		// } else {
 			fill(this.clr)
-		}
+		// }
 		
 		textSize(this.size)
 		text(this.lyrics,this.p.x,this.p.y)

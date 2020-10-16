@@ -1,10 +1,15 @@
 <template lang='pug'>
 .background I am background
+  iframe(:src='src')
 </template>
 
 <script>
 export default {
-
+  data() {
+    return {
+      src: 'http://localhost:8080/work/DigiCode/index.html'
+    }
+  }
 }
 </script>
 
@@ -17,4 +22,9 @@ export default {
   flexCenter()
   background-color #0f0
   z-index -1
+
+  iframe
+    size()
+    position absolute
+    border none
 </style>

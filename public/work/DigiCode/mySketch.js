@@ -41,6 +41,10 @@ function preload() {
   digiCode = loadFont('Digicode Regular.ttf')
 }
 
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(255);
@@ -51,28 +55,28 @@ function setup() {
 	let colorOrange
 	let colorGold
 	
-	inputElement = createInput()
-	inputElement.position(50,50)
-	inputElement.input(userInput)
-	inputElement.style('border','none')
-	inputElement.style('backgroundColor','#eee')
+	// inputElement = createInput()
+	// inputElement.position(50,50)
+	// inputElement.input(userInput)
+	// inputElement.style('border','none')
+	// inputElement.style('backgroundColor','#eee')
 	// inputElement.style('width','140px')
 	
-	radioElement = createRadio()
-	radioElement.position(50,100)
-	radioElement.style('backgroundColor','#eee')
-	radioElement.style('width','140px')
-	radioElement.style('border','2px solid #222')
-	radioElement.style('borderRadius','4px')
-	radioElement.style('padding','4px')
-	radioElement.style('textAlign','center')
-	radioElement.option('Normal',1)
-	radioElement.option('Picker',2)
-	radioElement.value('1')
+	// radioElement = createRadio()
+	// radioElement.position(50,100)
+	// radioElement.style('backgroundColor','#eee')
+	// radioElement.style('width','140px')
+	// radioElement.style('border','2px solid #222')
+	// radioElement.style('borderRadius','4px')
+	// radioElement.style('padding','4px')
+	// radioElement.style('textAlign','center')
+	// radioElement.option('Normal',1)
+	// radioElement.option('Picker',2)
+	// radioElement.value('1')
 	
-	colorPickerElement = createColorPicker(color(47,100,100))
-	colorPickerElement.position(50,150)
-	colorPickerElement.style('width','140px')
+	// colorPickerElement = createColorPicker(color(47,100,100))
+	// colorPickerElement.position(50,150)
+	// colorPickerElement.style('width','140px')
 	textFont(digiCode)
 	
 	for(let i=0;i<lyrics.length;i++) {
@@ -128,11 +132,11 @@ function userKey() {
 
 function draw() {
 	
-	let selectedColor = colorPickerElement.value()
+	// let selectedColor = colorPickerElement.value()
 	background(0)
 	
 	for(let lyric of lyricsArray) {
-		lyric.draw(selectedColor)
+		lyric.draw()
 		lyric.update()
 	}
 
