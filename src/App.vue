@@ -2,6 +2,7 @@
   #app
     Navbar
     Background
+    PagesChecked
 </template>
 
 <style lang="stylus" scoped>

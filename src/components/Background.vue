@@ -9,7 +9,7 @@
 export default {
   data() {
     return {
-      DigiCodeSrc: 'http://localhost:8080/work/DigiCode/index.html'
+      
     }
   }
 }
