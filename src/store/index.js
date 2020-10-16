@@ -16,7 +16,7 @@ export default new Vuex.Store({
       Season: 'http://localhost:8080/work/season/index.html',
       CDParty: 'http://localhost:8080/work/CD Party/index.html',
       SmallShotGame: 'http://localhost:8080/work/Small Shot Game/index.html'
-    }
+    } 
   },
   mutations: {
   },
