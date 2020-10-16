@@ -1,13 +1,15 @@
 <template lang='pug'>
-.background I am background
-  iframe(:src='src')
+.background 
+  LeftSection
+  RightSection
+
 </template>
 
 <script>
 export default {
   data() {
     return {
-      src: 'http://localhost:8080/work/DigiCode/index.html'
+      DigiCodeSrc: 'http://localhost:8080/work/DigiCode/index.html'
     }
   }
 }
@@ -20,11 +22,15 @@ export default {
   position absolute
   size()
   flexCenter()
-  background-color #0f0
+  background-color #0083ff
   z-index -1
 
-  iframe
-    size()
+
+@media screen and (min-width 1280px)
+  .background
     position absolute
-    border none
+    size()
+    flexCenter()
+    background-color #0083ff
+    z-index -1
 </style>
