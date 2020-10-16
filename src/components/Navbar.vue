@@ -15,6 +15,7 @@
 <style lang="stylus" scoped>
 @import '../css/style.styl'
 .header
+  position fixed
   size(100%,auto)
   flexCenter(space-between,center,column)
   .title
@@ -49,25 +50,25 @@
     display none
 
 
-@media screen and (min-width 1024px)
+@media screen and (min-width 1280px)
   h1,i
-    font-size xl
+    font-size md
   i 
     display none
   .header
     .title
-      size(100%,120px)
+      size(100%,84px)
       position relative
       .nav
         position absolute
         right 0
         size(50%,100%)
-        flexCenter(space-around,center)
+        flexCenter()
         font-size 1rem
         li
+          padding 0px 16px
           size(100%,100%)
           flexCenter()
-          padding 16px
         li:hover
           background-color #222
           a
