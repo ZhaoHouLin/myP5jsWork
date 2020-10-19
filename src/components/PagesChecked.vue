@@ -1,7 +1,7 @@
 <template lang='pug'>
 .pagesChecked
-  label.circleChecked(v-for=' circle in $store.state.iframeSrc')
-    input(type="radio" :value='circle' name="r" v-model='isChecked')
+  label.circleChecked(v-for=' (circle,key,idx) in $store.state.iframeSrc')
+    input(type="radio" :value='idx+1' name="r" v-model='isChecked')
     div
 
 </template>
@@ -12,7 +12,6 @@ export default {
   data() {
     return {
       isChecked: 1,
-      // checkedValue:[1,2,3,4]
     }
   },
   methods: {
