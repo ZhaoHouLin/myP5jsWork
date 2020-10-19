@@ -3,12 +3,11 @@
   .title
     h1 ZZ p5js work
     i(@click='listIsShow' :class="['menu','fas',{'fa-bars':!isOpen},{'fa-times':isOpen}]" )
-    ul.nav()
-      li(v-for='list in menu' :key='list')
-        a(:href='"#"+list') {{list}} 
+    ul.nav
+      a(v-for='list in menu' :key='list.name' :href='list.url' ,:target='list.open') {{list.name}} 
+
   ul.box(:style='{height:BoxHeight}')
-    li(v-for='list in menu' :key='list')
-      a(:href='"#"+list') {{list}}
+    a(v-for='list in menu' :key='list.name' :href='list.url' ,:target='list.open') {{list.name}}
     
 </template>
 
@@ -28,30 +27,26 @@
     i 
       cursor pointer
       transition 0.5s
-    // .nav
+    .nav
+      display none
+
   .box
     display block
     size(100%,0)
     transition height 0.4s
     overflow hidden
-    
-    li
+    a
       color #fff
       size(100%,56px)
       background-color transparent
       flexCenter()
       align-items center
       border-bottom 1px solid #fff
-      a
-        flexCenter()
-        size(100%,56px)
-    li:hover
+    a:hover
+      color #222
       background-color #fff
       
-      a
-        color #222
-  .nav
-    display none
+  
 
 
 @media screen and (min-width 1280px)
@@ -70,15 +65,15 @@
         size(50%,100%)
         flexCenter()
         font-size 1rem
-        li
+        a
           color #fff
           padding 0px 16px
           size(100%,100%)
           flexCenter()
-        li:hover
+        a:hover
           background-color #fff
-          a
-            color #222
+          color #222
+          
     .box
       display none
     
@@ -88,10 +83,25 @@
 export default {
   data() {
     return {
+      // menu: [
+      //   'about',
+      //   'openprocessing',
+      //   'contact'
+      // ],
       menu: [
-        'about',
-        'openprocessing',
-        'contact'
+        {
+          name: 'about',
+          url: '#/about',
+        },
+        {
+          name: 'openprocessing',
+          url: 'https://www.openprocessing.org/user/231689/',
+          open: '_blank'
+        },
+        {
+          name: 'contact',
+          url: '#/contact',  
+        },
       ],
       isOpen: false
     }

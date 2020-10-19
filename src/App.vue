@@ -3,6 +3,7 @@
     Navbar
     Background
     PagesChecked
+    router-view
 </template>
 
 <style lang="stylus" scoped>

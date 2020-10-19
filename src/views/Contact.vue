@@ -1,11 +1,11 @@
 <template lang='pug'>
-  .about
-    h1 about
+  .contact
+    h1 contact
 </template>
 
 <style lang="stylus" scoped>
 @import '../css/style.styl'
-.about
+.contact
   posCenter()
   // z-index 2
   background-color #fff
