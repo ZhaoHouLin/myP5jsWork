@@ -16,11 +16,19 @@ export default new Vuex.Store({
       Season: 'http://localhost:8080/work/season/index.html',
       CDParty: 'http://localhost:8080/work/CD Party/index.html',
       SmallShotGame: 'http://localhost:8080/work/Small Shot Game/index.html'
-    } 
+    },
+    resultSrc:'http://localhost:8080/work/DigiCode/index.html' 
   },
   mutations: {
+    pageState(state,key) {
+      state.resultSrc = state.iframeSrc[key]
+    }
+
   },
   actions: {
+    pageCommit({commit},key) {
+      commit('pageState',key)
+    }
   },
   modules: {
   }

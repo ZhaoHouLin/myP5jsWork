@@ -1,13 +1,13 @@
 <template lang='pug'>
 .rightSection
-  iframe.DigiCode(:src='DigiCodeSrc')  
+  iframe.DigiCode(:src='$store.state.resultSrc')  
 </template>
 
 <script>
 export default {
   data() {
     return {
-      DigiCodeSrc: 'http://localhost:8080/work/DigiCode/index.html'
+      
     }
   }
 }
@@ -17,6 +17,7 @@ export default {
 @import '../css/style.styl'
 
 .rightSection
+  background-color #222
   size(80%)
   .DigiCode
     size()

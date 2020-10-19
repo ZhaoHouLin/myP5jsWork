@@ -1,21 +1,24 @@
 <template lang='pug'>
 .pagesChecked
   label.circleChecked(v-for=' (circle,key,idx) in $store.state.iframeSrc')
-    input(type="radio" :value='idx+1' name="r" v-model='isChecked')
+    input(type="radio" :value='idx' name="r" v-model='isChecked' @click='changePage(key)')
     div
 
 </template>
 
 <script>
-
+import { mapActions } from 'vuex'
 export default {
   data() {
     return {
-      isChecked: 1,
+      isChecked: 0,
     }
   },
   methods: {
-   
+    ...mapActions(['pageCommit']),
+    changePage(key) {
+      this.pageCommit(key)
+    }
   },
   computed: {
 
