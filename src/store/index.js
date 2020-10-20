@@ -10,7 +10,7 @@ export default new Vuex.Store({
       Neon: 'http://localhost:8080/work/Neon/index.html',
       RedCrust: 'http://localhost:8080/work/Red Crust/index.html',
       SimplePlayer: 'http://localhost:8080/work/Simple Player/index.html',
-      CDCover: 'http://localhost:8080/work/CD Cover/index.html',
+      SkySeaBoat: 'http://localhost:8080/work/Sky Sea Boat/index.html',
       PixelDraw: 'http://localhost:8080/work/pixel draw/index.html',
       TimeColor: 'http://localhost:8080/work/Time Color/index.html',
       Season: 'http://localhost:8080/work/season/index.html',
