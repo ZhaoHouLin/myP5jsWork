@@ -30,7 +30,8 @@ export default {
       -webkit-writing-mode initial
       writing-mode initial 
       text-align center
-      font-size 4rem
+      font-size xl
+      line-height initial
       color #fff
 
 </style>

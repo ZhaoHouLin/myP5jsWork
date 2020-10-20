@@ -1,14 +1,23 @@
 <template lang='pug'>
   .about
-    h1 about
+    h1 About me
+    h3 我的名字叫林炤后，可以叫我ZZ，別人眼中的我是個悶騷、講話直接的人，對於互動特效網頁深感興趣，所以持續學習前端網路程式相關課程，如html、css、Javascript、P5js、Vue等。
 </template>
 
 <style lang="stylus" scoped>
 @import '../css/style.styl'
 .about
-  posCenter()
-  // z-index 2
-  background-color #fff
-  h1 
-    font-size 72px
+  size(50%,auto)
+  position absolute
+  top 50%
+  left 20%
+  transform translate(0%,-50%)
+  background-color transparent
+  padding 16px
+  padding-left 32px
+  h1,h3 
+    color #eee
+
+  h3
+    margin-top 16px
 </style>
