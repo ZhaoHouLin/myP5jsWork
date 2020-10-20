@@ -4,7 +4,7 @@
     h1 ZZ p5js work
     i(@click='listIsShow' :class="['menu','fas',{'fa-bars':!isOpen},{'fa-times':isOpen}]" )
     ul.nav
-      a(v-for='list in menu' :key='list.name' :href='list.url' ,:target='list.open') {{list.name}} 
+      a(v-for='list in menu' :key='list.name' :href='list.url' ,:target='list.open' ) {{list.name}} 
 
   ul.box(:style='{height:BoxHeight}')
     a(v-for='list in menu' :key='list.name' :href='list.url' ,:target='list.open') {{list.name}}
@@ -45,8 +45,9 @@
     a:hover
       color #222
       background-color #fff
-      
-  
+    a:focus
+      background-color #fff
+      color #222
 
 
 @media screen and (min-width 1280px)
@@ -73,6 +74,9 @@
         a:hover
           background-color #fff
           color #222
+        a:focus
+          background-color #fff
+          color #222
           
     .box
       display none
@@ -83,11 +87,6 @@
 export default {
   data() {
     return {
-      // menu: [
-      //   'about',
-      //   'openprocessing',
-      //   'contact'
-      // ],
       menu: [
         {
           name: 'about',
