@@ -3,7 +3,8 @@
     Navbar
     Background
     PagesChecked
-    router-view
+    transition(name='page' mode='out-in')
+      router-view
 </template>
 
 <style lang="stylus" scoped>
@@ -15,6 +16,10 @@
   margin 0
   flexCenter(flxe-start,center,column)
 
+.page-enter-active,.page-leave-active
+  transition 0.5s
+.page-enter,.page-leave-to
+  opacity 0
   
 </style>
 
