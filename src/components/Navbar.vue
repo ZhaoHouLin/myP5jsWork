@@ -35,13 +35,14 @@
     size(100%,0)
     transition height 0.4s
     overflow hidden
+    background-color rgba(0,0,0,0.7)
     a
       color #fff
       size(100%,56px)
       background-color transparent
       flexCenter()
       align-items center
-      border-bottom 1px solid #fff
+      border-top 1px solid #fff
     a:hover
       color #222
       background-color #fff
