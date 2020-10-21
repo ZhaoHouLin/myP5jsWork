@@ -6,18 +6,18 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     iframeSrc: {
-      DigiCode: 'http://localhost:8080/work/DigiCode/index.html',
-      Neon: 'http://localhost:8080/work/Neon/index.html',
-      RedCrust: 'http://localhost:8080/work/Red Crust/index.html',
-      SimplePlayer: 'http://localhost:8080/work/Simple Player/index.html',
-      SkySeaBoat: 'http://localhost:8080/work/Sky Sea Boat/index.html',
-      PixelDraw: 'http://localhost:8080/work/pixel draw/index.html',
-      TimeColor: 'http://localhost:8080/work/Time Color/index.html',
-      Season: 'http://localhost:8080/work/season/index.html',
-      CDParty: 'http://localhost:8080/work/CD Party/index.html',
-      SmallShotGame: 'http://localhost:8080/work/Small Shot Game/index.html'
+      DigiCode: process.env.VUE_APP_SERVER_URL+'/work/DigiCode/index.html',
+      Neon: process.env.VUE_APP_SERVER_URL+'/work/Neon/index.html',
+      RedCrust: process.env.VUE_APP_SERVER_URL+'/work/Red Crust/index.html',
+      SimplePlayer: process.env.VUE_APP_SERVER_URL+'/work/Simple Player/index.html',
+      SkySeaBoat: process.env.VUE_APP_SERVER_URL+'/work/Sky Sea Boat/index.html',
+      PixelDraw: process.env.VUE_APP_SERVER_URL+'/work/pixel draw/index.html',
+      TimeColor: process.env.VUE_APP_SERVER_URL+'/work/Time Color/index.html',
+      Season: process.env.VUE_APP_SERVER_URL+'/work/season/index.html',
+      CDParty: process.env.VUE_APP_SERVER_URL+'/work/CD Party/index.html',
+      SmallShotGame: process.env.VUE_APP_SERVER_URL+'/work/Small Shot Game/index.html'
     },
-    resultSrc:'http://localhost:8080/work/DigiCode/index.html' 
+    resultSrc:process.env.VUE_APP_SERVER_URL+'/work/DigiCode/index.html' 
   },
   mutations: {
     pageState(state,key) {
