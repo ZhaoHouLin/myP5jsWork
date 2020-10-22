@@ -1,6 +1,7 @@
 <template lang='pug'>
   .contact
     h1 Contact
+    h3 rodes5292@gmail.com
     .contactList
       a(href='https://github.com/ZhaoHouLin' target='_blank')
         i.fab.fa-github-square
@@ -8,6 +9,7 @@
         i.fab.fa-codepen
       a(href='https://www.facebook.com/ZhaoHouLin/' target='_blank')
         i.fab.fa-facebook-square
+    
 </template>
 
 <style lang="stylus" scoped>
@@ -23,7 +25,12 @@
   padding-left 32px
   h1
     color #eee
-    // font-size md
+    text-shadow 4px 4px 16px rgba(0,0,0,1)
+  h3
+    color #eee
+    margin-top 16px
+    word-wrap break-word
+
   .contactList
     i
       size(auto,auto)
@@ -31,5 +38,13 @@
       margin-right 16px
       font-size 48px
       color #eee
+      text-shadow 8px 8px 16px rgba(0,0,0,1)
+  
+
+@media screen and (min-width 1280px)
+  .contact
+    h3
+      margin-top 16px
+      text-shadow 4px 4px 16px rgba(0,0,0,1)
 
 </style>

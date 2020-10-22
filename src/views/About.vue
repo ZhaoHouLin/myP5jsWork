@@ -17,7 +17,14 @@
   padding-left 32px
   h1,h3 
     color #eee
+    text-shadow 4px 4px 16px rgba(0,0,0,1)
 
   h3
     margin-top 16px
+
+@media screen and (min-width 1280px)
+  .about
+    h3
+      font-size 24px
+
 </style>
