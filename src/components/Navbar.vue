@@ -80,8 +80,8 @@
           text-shadow none
           
         a:focus
-          background-color #fff
-          color #222
+          background-color #0083ff
+          color #fff
           
     .box
       display none
