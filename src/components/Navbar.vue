@@ -43,6 +43,7 @@
       flexCenter()
       align-items center
       border-top 1px solid #fff
+      
     a:hover
       color #222
       background-color #fff
@@ -72,9 +73,13 @@
           padding 0px 16px
           size(100%,100%)
           flexCenter()
+          text-shadow 4px 4px 16px rgba(0,0,0,1)
+          transition 0.5s
         a:hover
           background-color #fff
           color #222
+          text-shadow none
+          
         a:focus
           background-color #fff
           color #222
