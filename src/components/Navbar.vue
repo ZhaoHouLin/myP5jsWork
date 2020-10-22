@@ -35,7 +35,7 @@
     size(100%,0)
     transition height 0.4s
     overflow hidden
-    background-color rgba(0,0,0,0.7)
+    background-color rgba(0, 131, 255,0.7)
     a
       color #fff
       size(100%,56px)
@@ -46,10 +46,10 @@
       
     a:hover
       color #222
-      background-color #fff
+      background-color #0083ff
     a:focus
       background-color #fff
-      color #222
+      color #0083ff
 
 
 @media screen and (min-width 1280px)
@@ -76,13 +76,12 @@
           text-shadow 4px 4px 16px rgba(0,0,0,1)
           transition 0.5s
         a:hover
-          background-color #fff
-          color #222
+          background-color #0083ff
           text-shadow none
           
         a:focus
-          background-color #fff
-          color #222
+          background-color #0083ff
+          color #fff
           
     .box
       display none
