@@ -33,7 +33,7 @@
   .contactList
     i
       size(auto,auto)
-      margin-top 16px
+      margin-top 32px
       margin-right 16px
       font-size 48px
       color #eee
@@ -44,6 +44,7 @@
     h3
       -webkit-writing-mode vertical-lr
       writing-mode vertical-lr
+      margin-top 16px
 @media screen and (min-width 1024px)
   .contact
     h3
