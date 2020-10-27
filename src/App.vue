@@ -14,7 +14,6 @@
   size()
   padding 0
   margin 0
-  flexCenter(flxe-start,center,column)
 
 .page-enter-active,.page-leave-active
   transition 0.5s

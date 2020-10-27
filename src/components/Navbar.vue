@@ -64,6 +64,7 @@
       position relative
       .nav
         position absolute
+        top 0
         right 0
         size(50%,100%)
         flexCenter()
