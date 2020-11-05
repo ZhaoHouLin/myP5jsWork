@@ -15,6 +15,7 @@
 <style lang="stylus" scoped>
 @import '../css/style.styl'
 .contact
+  z-index 2
   size(50%,auto)
   position absolute
   top 50%

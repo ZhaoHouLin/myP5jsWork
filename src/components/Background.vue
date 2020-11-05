@@ -22,8 +22,6 @@ export default {
   position absolute
   size()
   flexCenter()
-  background-color #0083ff
-  // z-index -1
 
 
 @media screen and (min-width 1280px)
@@ -31,6 +29,5 @@ export default {
     position absolute
     size()
     flexCenter()
-    background-color #0083ff
-    // z-index -1
+    
 </style>
