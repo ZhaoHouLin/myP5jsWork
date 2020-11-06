@@ -23,8 +23,6 @@
       .timeline
         h3 2008-09 ~ 2012-06
 
-
-
 </template>
 
 <script>
@@ -48,7 +46,8 @@ export default {
 .resume
   position absolute
   flexCenter()
-
+  .content
+    display none
   
 @media screen and (min-width 1280px)
   .resume
@@ -60,16 +59,16 @@ export default {
     background-color #3dabff
     transition width 0.5s
     flexCenter()
-    // opacity 0.5
+
     i 
       position absolute
       right 0
       size(auto,auto)
       color #fff
-      // border 1px solid #000
+
     .content
       flexCenter(center,space-between)
-      size(60%,auto)
+      size(50%,auto)
       .experience,.education
         color #fff
         flexCenter(flex-start,,column)
@@ -90,5 +89,5 @@ export default {
   .isOpen
     transition width 0.5s
     width 100%
-
+    
 </style>
