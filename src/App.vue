@@ -2,6 +2,7 @@
   #app
     Navbar
     Background
+    Resume
     PagesChecked
     transition(name='page' mode='out-in')
       router-view

@@ -30,12 +30,12 @@ export default {
 @import '../css/style.styl'
 
 .pagesChecked
+  z-index 2
   position fixed
   right 0
   top 50%
   transform translate(0,-50%)
   .circleChecked
-    z-index 3
     flexCenter()
     margin-right 16px
   .circleChecked input[type="radio"]
@@ -75,7 +75,6 @@ export default {
     top 50%
     transform translate(0,-50%)
     .circleChecked
-      z-index 3
       flexCenter()
       margin-right 16px
     .circleChecked input[type="radio"]

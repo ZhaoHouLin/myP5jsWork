@@ -14,7 +14,7 @@
 <style lang="stylus" scoped>
 @import '../css/style.styl'
 .header
-  z-index 1
+  z-index 5
   position fixed
   size(100%,auto)
   flexCenter(space-between,center,column)
@@ -58,7 +58,7 @@
   i 
     display none
   .header
-    z-index 1
+    z-index 5
     .title
       size(100%,84px)
       position relative
