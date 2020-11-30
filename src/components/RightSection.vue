@@ -1,6 +1,6 @@
 <template lang='pug'>
 .rightSection
-  iframe.DigiCode(:src='$store.state.resultSrc')  
+  iframe(:src='$store.state.resultSrc')  
 </template>
 
 <script>
@@ -19,14 +19,14 @@ export default {
 .rightSection
   background-color #222
   size(80%)
-  .DigiCode
+  iframe
     size()
     border none
 
 @media screen and (min-width 1280px)
   .rightSection
     size(80%)
-    .DigiCode
+    iframe
       size()
       border none   
       
