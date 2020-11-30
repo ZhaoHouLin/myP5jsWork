@@ -11,7 +11,7 @@
   size(50%,auto)
   position absolute
   top 50%
-  left 20%
+  left 21%
   transform translate(0%,-50%)
   background-color transparent
   padding 16px
