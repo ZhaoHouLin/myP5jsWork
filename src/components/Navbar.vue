@@ -99,14 +99,15 @@ export default {
           url: '#/about',
         },
         {
+          name: 'contact',
+          url: '#/contact',  
+        },
+        {
           name: 'openprocessing',
           url: 'https://www.openprocessing.org/user/231689/',
           open: '_blank'
         },
-        {
-          name: 'contact',
-          url: '#/contact',  
-        },
+        
       ],
       isOpen: false
     }
