@@ -35,7 +35,6 @@ export default {
   methods: {
     open() {
       this.isOpen = !this.isOpen
-      console.log('hi');
     }
   }
 }

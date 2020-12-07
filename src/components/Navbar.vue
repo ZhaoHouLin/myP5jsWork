@@ -4,10 +4,19 @@
     h1 ZZ p5js work
     i(@click='listIsShow' :class="['menu','fas',{'fa-bars':!isOpen},{'fa-times':isOpen}]" )
     ul.nav
-      a(v-for='list in menu' :key='list.name' :href='list.url' ,:target='list.open' ) {{list.name}} 
-
+      a(v-for='list in menu' 
+      :key='list.name' 
+      :href='list.url'
+      :target='list.open' 
+      :class="{active: $route.path === `/${list.name}`}") {{list.name}} 
+      
   ul.box(:style='{height:BoxHeight}')
-    a(v-for='list in menu' :key='list.name' :href='list.url' ,:target='list.open') {{list.name}}
+    a(v-for='list in menu' 
+    :key='list.name' 
+    :href='list.url' 
+    :target='list.open'
+    :class="{active: $route.path === `/${list.name}`}"
+    ) {{list.name}}
     
 </template>
 
@@ -43,15 +52,11 @@
       flexCenter()
       align-items center
       border-top 1px solid #fff
+      &.active
+        background-color #0083ff
+
+
       
-    a:hover
-      color #222
-      background-color #0083ff
-    a:focus
-      background-color #fff
-      color #0083ff
-
-
 @media screen and (min-width 1280px)
   h1,i
     font-size md
@@ -76,14 +81,12 @@
           flexCenter()
           text-shadow 4px 4px 16px rgba(0,0,0,1)
           transition 0.5s
+          &.active
+            background-color #0083ff
         a:hover
           background-color #0083ff
           text-shadow none
-          
-        a:focus
-          background-color #0083ff
-          color #fff
-          
+                    
     .box
       display none
     
@@ -109,7 +112,7 @@ export default {
         },
         
       ],
-      isOpen: false
+      isOpen: false,
     }
   },
   methods: {
@@ -121,6 +124,6 @@ export default {
     BoxHeight() {
       return this.isOpen ? `${this.menu.length*56}px` : '0px'
     }
-  }
+  },
 }
 </script>
